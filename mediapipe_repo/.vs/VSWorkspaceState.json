@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\mediapipe",
+    "\\mediapipe\\bazel-mediapipe",
+    "\\mediapipe\\bazel-mediapipe\\external",
+    "\\mediapipe\\bazel-mediapipe\\mediapipe",
+    "\\mediapipe\\bazel-mediapipe\\third_party"
+  ],
+  "PreviewInSolutionExplorer": false
+}
