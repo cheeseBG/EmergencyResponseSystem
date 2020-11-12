@@ -1,2 +1,0 @@
-# DO NOT EDIT: automatically generated WORKSPACE file for third_party_http_archive rule
-workspace(name = "cpuinfo")

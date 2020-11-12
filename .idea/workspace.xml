@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6700b865-e657-4c38-9787-17fcc4a71dd0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mediapipe_repo/.idea/mediapipe_repo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6700b865-e657-4c38-9787-17fcc4a71dd0" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +55,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="461" />
-    <option name="y" value="28" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="902" />
+    <option name="y" value="7" />
     <option name="width" value="980" />
     <option name="height" value="1050" />
   </component>
@@ -170,7 +167,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="369" y="23" width="784" height="840" extended-state="1" />
+    <frame x="722" y="6" width="784" height="840" extended-state="0" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
