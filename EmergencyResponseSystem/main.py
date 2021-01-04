@@ -163,42 +163,42 @@ class MainWindow(QMainWindow):
                             cmd = find_gesture(define_gesture(landmark_list),
                                                handedness(landmark_list[0], landmark_list[1]))
                             # Camera Command
-                            # if cmd == "Camera_LEFT" or cmd == "Camera_RIGHT" or cmd == "Camera_CENTER":
-                            #     if cmd == "Camera_LEFT" and camera_left == 0:
-                            #         left_prev = cmd
-                            #         left_count = 0
-                            #         camera_left = 1
-                            #         camera_right = 0
-                            #         camera_center = 0
-                            #
-                            #         # Create Thread
-                            #         t = threading.Thread(target=url_command_left, name="[Daemon5]", args=(cmd,))
-                            #         t.setDaemon(True)
-                            #         t.start()
-                            #
-                            #     elif cmd == "Camera_RIGHT" and camera_right == 0:
-                            #         left_prev = cmd
-                            #         left_count = 0
-                            #         camera_left = 0
-                            #         camera_right = 1
-                            #         camera_center = 0
-                            #
-                            #         # Create Thread
-                            #         t = threading.Thread(target=url_command_left, name="[Daemon6]", args=(cmd,))
-                            #         t.setDaemon(True)
-                            #         t.start()
-                            #
-                            #     elif cmd == "Camera_CENTER" and camera_center == 0:
-                            #         left_prev = cmd
-                            #         left_count = 0
-                            #         camera_left = 0
-                            #         camera_right = 0
-                            #         camera_center = 1
-                            #
-                            #         # Create Thread
-                            #         t = threading.Thread(target=url_command_left, name="[Daemon7]", args=(cmd,))
-                            #         t.setDaemon(True)
-                            #         t.start()
+                            if cmd == "Camera_LEFT" or cmd == "Camera_RIGHT" or cmd == "Camera_CENTER":
+                                if cmd == "Camera_LEFT" and camera_left == 0:
+                                    left_prev = cmd
+                                    left_count = 0
+                                    camera_left = 1
+                                    camera_right = 0
+                                    camera_center = 0
+
+                                    # Create Thread
+                                    t = threading.Thread(target=url_command_left, name="[Daemon5]", args=(cmd,))
+                                    t.setDaemon(True)
+                                    t.start()
+
+                                elif cmd == "Camera_RIGHT" and camera_right == 0:
+                                    left_prev = cmd
+                                    left_count = 0
+                                    camera_left = 0
+                                    camera_right = 1
+                                    camera_center = 0
+
+                                    # Create Thread
+                                    t = threading.Thread(target=url_command_left, name="[Daemon6]", args=(cmd,))
+                                    t.setDaemon(True)
+                                    t.start()
+
+                                elif cmd == "Camera_CENTER" and camera_center == 0:
+                                    left_prev = cmd
+                                    left_count = 0
+                                    camera_left = 0
+                                    camera_right = 0
+                                    camera_center = 1
+
+                                    # Create Thread
+                                    t = threading.Thread(target=url_command_left, name="[Daemon7]", args=(cmd,))
+                                    t.setDaemon(True)
+                                    t.start()
 
 
 
