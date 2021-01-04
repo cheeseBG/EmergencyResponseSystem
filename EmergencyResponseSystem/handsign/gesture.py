@@ -1,6 +1,12 @@
+'''
+Project Title : Hand gesture recognition algorithm
+Author : Jang Jung iiK
+Last Modified : 2020.11.27
+'''
 from math import sqrt, acos
 from math import degrees
 
+# Define right & left hand gestures
 right_gesture_dict = {'11111': "STOP",   # zero
                       '10111': "GO",    # one
                       '10011': "TURN",    # two
@@ -18,6 +24,7 @@ left_gesture_dict = {'11111': "Capture",   # zero
                      }
 
 
+# Check hand is left or right
 def handedness(point0, point1):
     if point1[0] > point0[0]:
         return 'left'
@@ -25,6 +32,7 @@ def handedness(point0, point1):
         return 'right'
 
 
+# Change 3 points to 2 vectors
 def transf_vector(point1, point2, point3):
 
     # point21 vector
@@ -40,6 +48,7 @@ def transf_vector(point1, point2, point3):
     return v1, v2
 
 
+# Normalize vector
 def normalize(vec):
     len = sqrt(vec[0] * vec[0] + vec[1] * vec[1] + vec[2] * vec[2])
     return [vec[0] / len, vec[1] / len, vec[2] / len]
@@ -50,10 +59,12 @@ def dot(vec1, vec2):
     return vec1[0] * vec2[0] + vec1[1] * vec2[1] + vec1[2] * vec2[2]
 
 
+# Calculate interior angle
 def get_degree(vec1, vec2):
     return degrees(acos(dot(normalize(vec1), normalize(vec2))))
 
 
+# Check the finger's state(bent or straight)
 def bent_or_straight(degree, thumb_check):
     threshold = 90.0
     thumb_threshold = 160.0
@@ -71,7 +82,7 @@ def bent_or_straight(degree, thumb_check):
             return 0
 
 
-# Angle
+# Return five finger's state
 def define_gesture(lnd_list):
     hand_map = ''
     finger_idx = [2, 3, 4, 5, 6, 8, 9, 10, 12, 13, 14, 16, 17, 18, 20]
@@ -90,6 +101,7 @@ def define_gesture(lnd_list):
     return hand_map
 
 
+# Return hand gesture command
 def find_gesture(hand_map, handedness):
     try:
         if(handedness == 'right'):
@@ -98,34 +110,4 @@ def find_gesture(hand_map, handedness):
             return left_gesture_dict[hand_map]
     except:
         return 'None'
-
-# Distance
-
-def calculate_dist(point1, point2):
-
-    dist = sqrt((point1[0]-point2[0])**2 + (point1[1]-point2[1])**2 + (point1[2]-point2[2])**2)
-
-    return dist
-
-
-def calculate(lnd_list):
-    hand_map = ''
-    finger_idx = [2, 4, 5, 8, 9, 12, 13, 16, 17, 20]
-    cnt = 0
-
-    for i in range(0, 5):
-        dist1 = calculate_dist(lnd_list[0], lnd_list[finger_idx[cnt]])
-        dist2 = calculate_dist(lnd_list[0], lnd_list[finger_idx[cnt+1]])
-
-        print(dist1)
-        print(dist2)
-
-        # bent
-        if dist1 > dist2:
-            hand_map += str(1)
-        elif dist1 < dist2:
-            hand_map += str(0)
-        cnt += 2
-
-    return hand_map
 
