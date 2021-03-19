@@ -8,12 +8,13 @@ from PySide2.QtWidgets import *
 import cv2
 import mediapipe as mp
 import re
+import _init_paths
+
 from gesture import define_gesture, find_gesture, handedness
 from selenium import webdriver
 from SR_edsr import sr_work
 import time
-from urllib.request import urlopen
-import numpy as np
+
 
 
 import threading
