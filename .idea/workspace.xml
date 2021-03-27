@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6700b865-e657-4c38-9787-17fcc4a71dd0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/GraduationProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GraduationProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmergencyResponseSystem/.idea/GestureAlgo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmergencyResponseSystem/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmergencyResponseSystem/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmergencyResponseSystem/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmergencyResponseSystem/_init_paths.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmergencyResponseSystem/debug.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmergencyResponseSystem/lib/handsign/gesture.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmergencyResponseSystem/lib/pretrained_data/EDSR_x3.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmergencyResponseSystem/lib/pretrained_data/EDSR_x4.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmergencyResponseSystem/lib/sr/SR_edsr.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmergencyResponseSystem/lib/ui/ui_main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmergencyResponseSystem/lib/ui/ui_main_1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmergencyResponseSystem/lib/ui/ui_main_2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmergencyResponseSystem/lib/ui/ui_splash_screen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmergencyResponseSystem/lib/ui/ui_splash_screen_1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmergencyResponseSystem/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmergencyResponseSystem/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmergencyResponseSystem/wifiCam.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wifiCam.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
