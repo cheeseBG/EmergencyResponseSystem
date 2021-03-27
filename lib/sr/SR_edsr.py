@@ -8,7 +8,7 @@ def sr_work():
         sr = dnn_superres.DnnSuperResImpl_create()
 
         # Read image
-        image = cv2.imread('image/input.png')
+        image = cv2.imread('../../image/input.png')
 
         # Read the desired model
         path = "EDSR_x3.pb"
@@ -21,6 +21,6 @@ def sr_work():
         result = sr.upsample(image)
 
         # Save the image
-        cv2.imwrite("image/upscaled.png", result)
+        cv2.imwrite("../../image/upscaled.png", result)
     except:
         print("error")

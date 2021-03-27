@@ -248,7 +248,7 @@ class MainWindow(QMainWindow):
                     break
                 elif k % 256 == 32:
                     # space pressed --> capture
-                    img_name = 'image/input.png'
+                    img_name = '../../image/input.png'
                     cv2.imwrite(img_name, image)
 
         hands.close()
@@ -328,7 +328,7 @@ class MainWindow(QMainWindow):
         self.ui.rccarCam.setAlignment(QtCore.Qt.AlignHCenter | QtCore.Qt.AlignVCenter)
 
     def displayCaptureImg(self):
-        img = QPixmap.fromImage('image/input.png')
+        img = QPixmap.fromImage('../../image/input.png')
         w = self.ui.cap_img.width()
         h = self.ui.cap_img.height()
         self.ui.cap_img.setPixmap(img.scaled(w, h, Qt.KeepAspectRatioByExpanding))
@@ -336,7 +336,7 @@ class MainWindow(QMainWindow):
         self.ui.cap_img.setAlignment(QtCore.Qt.AlignHCenter | QtCore.Qt.AlignVCenter)
 
     def displaySRImg(self):
-        img = QPixmap.fromImage('image/upscaled.png')
+        img = QPixmap.fromImage('../../image/upscaled.png')
         w = self.ui.sr_img.width()
         h = self.ui.sr_img.height()
         self.ui.sr_img.setPixmap(img.scaled(w, h, Qt.KeepAspectRatioByExpanding))

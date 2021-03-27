@@ -1,4 +1,0 @@
-opencv-contrib-python
-Pyside2
-mediapipe
-selenium

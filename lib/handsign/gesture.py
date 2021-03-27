@@ -1,6 +1,6 @@
 '''
 Project Title : Hand gesture recognition algorithm
-Author : Jang Jung iiK
+Author : Jang Jung iK
 Last Modified : 2020.11.27
 '''
 from math import sqrt, acos
