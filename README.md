@@ -11,6 +11,11 @@ Contributors
 * [@Allannnn](https://github.com/Allannnn)
 
 
-API
+Opensource Used
 ---------------
-* Google Mediapipe Hands Phython Solution API
+* Google Mediapipe Hands
+
+Hardware Used
+-------------
+* Camera: Novomax NC-150
+* RC Car: Arduino Smart RC car + ESP32-CAM
