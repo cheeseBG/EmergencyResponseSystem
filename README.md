@@ -11,9 +11,17 @@ Contributors
 * [@Allannnn](https://github.com/Allannnn)
 
 
+Tech Stack
+----------
+* OpenCV
+* PyQt5
+* Arduino
+
+
 Opensource Used
 ---------------
 * Google Mediapipe Hands
+
 
 Hardware Used
 -------------
