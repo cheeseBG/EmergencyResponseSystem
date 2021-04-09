@@ -128,7 +128,8 @@ class MainWindow(QMainWindow):
                 if results.multi_hand_landmarks:
                     for hand_landmarks in results.multi_hand_landmarks:
                         for i in str(hand_landmarks).split():
-                            is_num = bool(re.findall('\d+', i))
+                            is_num = bool(re.findall('\d+', i))woghsjji
+
                             # Extract landmarks
                             if is_num is True:
                                 if cnt < 3 and cnt2 == 0:
