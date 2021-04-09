@@ -1,25 +1,26 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import cv2
+import mediapipe as mp
+import re
+import time
+import threading
+
 from PySide2 import QtCore, QtGui, QtWidgets
 from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
-import cv2
-import mediapipe as mp
-import re
-import _init_paths
-
-from gesture import define_gesture, find_gesture, handedness
 from selenium import webdriver
-from SR_edsr import sr_work
-import time
 
-
-
-import threading
-
+from lib.handsign.gesture import define_gesture, find_gesture, handedness
+from lib.sr.SR_edsr import sr_work
 from socket import *
+
+## ==> SPLASH SCREEN
+from lib.ui.ui_splash_screen import Ui_SplashScreen
+## ==> MAIN WINDOW
+from lib.ui.ui_main import Ui_MainWindow
 
 # Create Socket
 clientSock = socket(AF_INET, SOCK_STREAM)
@@ -28,11 +29,6 @@ clientSock.connect((url, 2000))
 
 mp_drawing = mp.solutions.drawing_utils
 mp_hands = mp.solutions.hands
-
-## ==> SPLASH SCREEN
-from ui_splash_screen import Ui_SplashScreen
-## ==> MAIN WINDOW
-from ui_main import Ui_MainWindow
 
 ## ==> GLOBALS
 counter = 0
@@ -128,7 +124,7 @@ class MainWindow(QMainWindow):
                 if results.multi_hand_landmarks:
                     for hand_landmarks in results.multi_hand_landmarks:
                         for i in str(hand_landmarks).split():
-                            is_num = bool(re.findall('\d+', i))woghsjji
+                            is_num = bool(re.findall('\d+', i))
 
                             # Extract landmarks
                             if is_num is True:
