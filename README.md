@@ -25,7 +25,5 @@ Opensource Used
 
 Hardware Used
 -------------
-* Camera: Novomax NC-150
-![nc-150](https://user-images.githubusercontent.com/51084152/114271387-078ff900-9a4c-11eb-895c-0fadeb81af69.png)
-
+* Camera: Novomax NC-150 
 * RC Car: Arduino Smart RC car + ESP32-CAM
