@@ -21,8 +21,8 @@ int L_Motor = 0;
 int mode = 0;
 
 String income_wifi=""; 
-String ssid = "jji";
-String password = "ji201533668";
+String ssid = "wifi_ssid";
+String password = "wifi_passward";
 
 String sendData(String command, const int timeout, boolean debug) {
   String response = "";
